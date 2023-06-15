@@ -1,0 +1,27 @@
+{
+    "projectName":              "vscode-taskexplorer-info",
+    "projectVersion":           "1.7.9",
+    "branch":                   "main",
+    "buildCommand":             "",
+    "buildPostCommand":         [],
+    "changelogFile":            "CHANGELOG.md",
+    "changelogNoTouch":         true,
+    "deployPostCommand":        [
+        "git add -- release/vscode-taskexplorer-$(VERSION).vsix CHANGELOG.md README.md .todo \"res/**/*.*\"",
+        "git commit -m \"chore: v$(VERSION)\" release/vscode-taskexplorer-$(VERSION).vsix CHANGELOG.md README.md .todo \"res/**/*.*\"",
+        "git push origin main:main"
+    ],
+    "githubAssets": [
+        "CHANGELOG.md|Changelog File",
+        "release/vscode-taskexplorer-$(VERSION).vsix|VSIX Installer"
+    ],
+    "githubRelease":            "Y",
+    "githubReleasePostCommand": "",
+    "githubUser":               "spmeesseman",
+    "promptVersion":            "Y",
+    "repo":                     "https://github.com/spmeesseman/vscode-taskexplorer-info.git",
+    "repoType":                 "git",
+    "skipChangelogEdits":       "N",
+    "skipVersionEdits":         "Y",
+    "vcWebPath":                "https://github.com/spmeesseman/vscode-taskexplorer-info"
+}
