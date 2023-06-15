@@ -1,6 +1,6 @@
 {
     "projectName":              "vscode-taskexplorer-info",
-    "projectVersion":           "1.7.9",
+    "projectVersion":           "2.13.2",
     "branch":                   "main",
     "buildCommand":             "",
     "buildPostCommand":         [],
